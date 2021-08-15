@@ -8,5 +8,4 @@ python3 main.py -n 10
 
 Dependencies:
 
-[dm_control](https://github.com/deepmind/dm_control)
-mujoco_py
+[dm_control](https://github.com/deepmind/dm_control), mujoco_py
