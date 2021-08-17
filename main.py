@@ -13,9 +13,10 @@ def create_n_links(n, base_file='base.xml'):
     even_link_quat = "0.707107 0 0 0.707107"
     odd_link_quat = "0 0 0 0"
     body = ""
-    ypos = n * .55 - 3.45
+    ypos = n * (54.3 - 6 / 2) + 3.45 + 64.3 / 2
     for i in range(n):
-        ypos -= .55
+        ypos -= (54.3 - 6 / 2)
+        print(ypos)
         if i % 2 == 0:
             body = mjcf_model.worldbody.add('body', name="body" + str(i), pos="-0 0 " + str(ypos), quat=even_link_quat)
         else:
@@ -32,7 +33,7 @@ def create_n_links(n, base_file='base.xml'):
         body.add('geom', mesh='torus9', type='mesh')
         body.add('geom', mesh='torus10', type='mesh')
         body.add('geom', mesh='torus11', type='mesh')
-        body.add('geom', mesh='torus12', type='mesh')
+        # body.add('geom', mesh='torus12', type='mesh')
         if i == 0:
             body.add('inertial', mass='0', pos="-0 0 " + str(ypos))
         else:

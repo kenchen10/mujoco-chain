@@ -4,30 +4,30 @@
 
     <asset>
         <mesh file="meshes/torus_vhacd2.stl" name="torus"/>
-        <mesh file="meshes/convex_0.stl" name="torus0"/>
-        <mesh file="meshes/convex_1.stl" name="torus1"/>
-        <mesh file="meshes/convex_2.stl" name="torus2"/>
-        <mesh file="meshes/convex_3.stl" name="torus3"/>
-        <mesh file="meshes/convex_4.stl" name="torus4"/>
-        <mesh file="meshes/convex_5.stl" name="torus5"/>
-        <mesh file="meshes/convex_6.stl" name="torus6"/>
-        <mesh file="meshes/convex_7.stl" name="torus7"/>
-        <mesh file="meshes/convex_8.stl" name="torus8"/>
-        <mesh file="meshes/convex_9.stl" name="torus9"/>
-        <mesh file="meshes/convex_10.stl" name="torus10"/>
-        <mesh file="meshes/convex_11.stl" name="torus11"/>
-        <mesh file="meshes/convex_12.stl" name="torus12"/>
+        <mesh file="meshes/convex_0_lab.stl" name="torus0"/>
+        <mesh file="meshes/convex_1_lab.stl" name="torus1"/>
+        <mesh file="meshes/convex_2_lab.stl" name="torus2"/>
+        <mesh file="meshes/convex_3_lab.stl" name="torus3"/>
+        <mesh file="meshes/convex_4_lab.stl" name="torus4"/>
+        <mesh file="meshes/convex_5_lab.stl" name="torus5"/>
+        <mesh file="meshes/convex_6_lab.stl" name="torus6"/>
+        <mesh file="meshes/convex_7_lab.stl" name="torus7"/>
+        <mesh file="meshes/convex_8_lab.stl" name="torus8"/>
+        <mesh file="meshes/convex_9_lab.stl" name="torus9"/>
+        <mesh file="meshes/convex_10_lab.stl" name="torus10"/>
+        <mesh file="meshes/convex_11_lab.stl" name="torus11"/>
+        <!-- <mesh file="meshes/convex_12.stl" name="torus12"/> -->
 
-        <texture type="skybox" builtin="gradient" width="100" height="100" rgb1="1 1 1" rgb2="0 0 0" />
+        <texture type="skybox" builtin="gradient" width="1000" height="100" rgb1="1 1 1" rgb2="0 0 0" />
         <texture name="texplane" type="2d" builtin="checker" rgb1="0 0 0" rgb2="0.8 0.8 0.8" width="100" height="100" />
         <material name='MatPlane' texture="texplane" shininess="1" texrepeat="30 30" specular="1"  reflectance="0.5" />
     </asset>
-    <size njmax="8000" nconmax="4000"/>
+    <size njmax="10000" nconmax="4000"/>
 
     <worldbody>
 
         <light directional="true" cutoff="100" exponent="1" diffuse="1 1 1" specular=".1 .1 .1" pos="0 0 1.3" dir="-0 0 -1.3" />
-        <geom name='floor' material="MatPlane" pos='-0 0 -5' size='40 40 40' type='plane' conaffinity='1' rgba='0.8 0.9 0.8 1' condim='3' />
+        <geom name='floor' material="MatPlane" pos='-0 0 -5' size='4000 4000 4000' type='plane' conaffinity='1' rgba='0.8 0.9 0.8 1' condim='3' />
         
     </worldbody>
 </mujoco>
