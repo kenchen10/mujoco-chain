@@ -16,6 +16,12 @@
         <mesh file="meshes/convex_9_lab.stl" name="torus9"/>
         <mesh file="meshes/convex_10_lab.stl" name="torus10"/>
         <mesh file="meshes/convex_11_lab.stl" name="torus11"/>
+        <mesh file="meshes/convex_12_lab.stl" name="torus12"/>
+        <mesh file="meshes/convex_13_lab.stl" name="torus13"/>
+        <mesh file="meshes/convex_14_lab.stl" name="torus14"/>
+        <mesh file="meshes/convex_15_lab.stl" name="torus15"/>
+        <mesh file="meshes/convex_16_lab.stl" name="torus16"/>
+        <mesh file="meshes/convex_17_lab.stl" name="torus17"/>
         <!-- <mesh file="meshes/convex_12.stl" name="torus12"/> -->
 
         <texture type="skybox" builtin="gradient" width="1000" height="100" rgb1="1 1 1" rgb2="0 0 0" />

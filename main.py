@@ -14,9 +14,9 @@ def create_n_links(n, base_file='base.xml'):
     odd_link_quat = "0 0 0 0"
     body = ""
     ypos = n * (54.3 - 6 / 2) + 3.45 + 64.3 / 2
+    m = 91 / 23
     for i in range(n):
         ypos -= (54.3 - 6 / 2)
-        print(ypos)
         if i % 2 == 0:
             body = mjcf_model.worldbody.add('body', name="body" + str(i), pos="-0 0 " + str(ypos), quat=even_link_quat)
         else:
@@ -33,11 +33,18 @@ def create_n_links(n, base_file='base.xml'):
         body.add('geom', mesh='torus9', type='mesh')
         body.add('geom', mesh='torus10', type='mesh')
         body.add('geom', mesh='torus11', type='mesh')
+        body.add('geom', mesh='torus12', type='mesh')
+        body.add('geom', mesh='torus13', type='mesh')
+        body.add('geom', mesh='torus14', type='mesh')
+        body.add('geom', mesh='torus15', type='mesh')
+        body.add('geom', mesh='torus16', type='mesh')
+        body.add('geom', mesh='torus17', type='mesh')
         # body.add('geom', mesh='torus12', type='mesh')
         if i == 0:
             body.add('inertial', mass='0', pos="-0 0 " + str(ypos))
         else:
-            body.add('freejoint')
+            body.add('joint', type='free')
+            body.add('inertial', pos="-0 0 " + str(ypos), mass=m)
     mjcf.export_with_assets(mjcf_model, 'xml', out_file_name='chain_' + str(n) + '.xml')
 
 create_n_links(int(args.num_links))
