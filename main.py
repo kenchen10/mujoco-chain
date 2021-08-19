@@ -11,7 +11,7 @@ def create_n_links(n, base_file='base.xml'):
     # Parse from path
     mjcf_model = mjcf.from_path(base_file)
     even_link_quat = "0.707107 0 0 0.707107"
-    odd_link_quat = "0 0 0 0"
+    odd_link_quat = "1 0 0 0"
     body = ""
     ypos = n * (54.3 - 6 / 2) + 3.45 + 64.3 / 2
     m = 91 / 23
@@ -44,7 +44,7 @@ def create_n_links(n, base_file='base.xml'):
             body.add('inertial', mass='0', pos="-0 0 " + str(ypos))
         else:
             body.add('joint', type='free')
-            body.add('inertial', pos="-0 0 " + str(ypos), mass=m)
+            # body.add('inertial', pos="-0 0 " + str(ypos), mass=m)
     mjcf.export_with_assets(mjcf_model, 'xml', out_file_name='chain_' + str(n) + '.xml')
 
 create_n_links(int(args.num_links))
