@@ -52,7 +52,7 @@ xml_path = "xml/chain_" + str(args.num_links) + ".xml"
 physics = mujoco.Physics.from_xml_path(xml_path)
 d = []
 for pos in physics.named.data.xpos:
-    d.append({'mesh': 'link_lab_vhcad.obj', 'pos': pos/1000})
+    d.append({'mesh': 'link_lab_vhcad.obj', 'pos': pos})
 print(d)
 
 model = mujoco_py.load_model_from_path(xml_path)
