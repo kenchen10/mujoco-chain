@@ -1,5 +1,5 @@
 import mujoco_py
-from dm_control import mjcf
+from dm_control import mjcf, mujoco
 import argparse
 
 parser = argparse.ArgumentParser()
@@ -13,10 +13,10 @@ def create_n_links(n, base_file='base.xml'):
     even_link_quat = "0.707107 0 0 0.707107"
     odd_link_quat = "1 0 0 0"
     body = ""
-    ypos = n * (54.3 - 6 / 2) + 3.45 + 64.3 / 2
+    ypos = (n * (54.3 - 2 / 2) / 1000 + 4.45 / 1000 + 64.3 / 2000)
     m = 91 / 23
     for i in range(n):
-        ypos -= (54.3 - 6 / 2)
+        ypos -= (54.3 - 2 / 2) / 1000
         if i % 2 == 0:
             body = mjcf_model.worldbody.add('body', name="body" + str(i), pos="-0 0 " + str(ypos), quat=even_link_quat)
         else:
@@ -49,6 +49,12 @@ def create_n_links(n, base_file='base.xml'):
 
 create_n_links(int(args.num_links))
 xml_path = "xml/chain_" + str(args.num_links) + ".xml"
+physics = mujoco.Physics.from_xml_path(xml_path)
+d = []
+for pos in physics.named.data.xpos:
+    d.append({'mesh': 'link_lab_vhcad.obj', 'pos': pos/1000})
+print(d)
+
 model = mujoco_py.load_model_from_path(xml_path)
 sim = mujoco_py.MjSim(model)
 viewer = mujoco_py.MjViewer(sim)

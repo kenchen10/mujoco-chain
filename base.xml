@@ -1,27 +1,27 @@
 <mujoco>
 
-    <option timestep="0.01667" integrator="RK4" />
+    <option timestep="0.001667" integrator="RK4" />
 
     <asset>
         <mesh file="meshes/torus_vhacd2.stl" name="torus"/>
-        <mesh file="meshes/convex_0_lab.stl" name="torus0"/>
-        <mesh file="meshes/convex_1_lab.stl" name="torus1"/>
-        <mesh file="meshes/convex_2_lab.stl" name="torus2"/>
-        <mesh file="meshes/convex_3_lab.stl" name="torus3"/>
-        <mesh file="meshes/convex_4_lab.stl" name="torus4"/>
-        <mesh file="meshes/convex_5_lab.stl" name="torus5"/>
-        <mesh file="meshes/convex_6_lab.stl" name="torus6"/>
-        <mesh file="meshes/convex_7_lab.stl" name="torus7"/>
-        <mesh file="meshes/convex_8_lab.stl" name="torus8"/>
-        <mesh file="meshes/convex_9_lab.stl" name="torus9"/>
-        <mesh file="meshes/convex_10_lab.stl" name="torus10"/>
-        <mesh file="meshes/convex_11_lab.stl" name="torus11"/>
-        <mesh file="meshes/convex_12_lab.stl" name="torus12"/>
-        <mesh file="meshes/convex_13_lab.stl" name="torus13"/>
-        <mesh file="meshes/convex_14_lab.stl" name="torus14"/>
-        <mesh file="meshes/convex_15_lab.stl" name="torus15"/>
-        <mesh file="meshes/convex_16_lab.stl" name="torus16"/>
-        <mesh file="meshes/convex_17_lab.stl" name="torus17"/>
+        <mesh file="meshes/convex_0_lab.stl" name="torus0" scale=".001 .001 .001"/>
+        <mesh file="meshes/convex_1_lab.stl" name="torus1" scale=".001 .001 .001"/>
+        <mesh file="meshes/convex_2_lab.stl" name="torus2" scale=".001 .001 .001"/>
+        <mesh file="meshes/convex_3_lab.stl" name="torus3" scale=".001 .001 .001"/>
+        <mesh file="meshes/convex_4_lab.stl" name="torus4" scale=".001 .001 .001"/>
+        <mesh file="meshes/convex_5_lab.stl" name="torus5" scale=".001 .001 .001"/>
+        <mesh file="meshes/convex_6_lab.stl" name="torus6" scale=".001 .001 .001"/>
+        <mesh file="meshes/convex_7_lab.stl" name="torus7" scale=".001 .001 .001"/>
+        <mesh file="meshes/convex_8_lab.stl" name="torus8" scale=".001 .001 .001"/>
+        <mesh file="meshes/convex_9_lab.stl" name="torus9" scale=".001 .001 .001"/>
+        <mesh file="meshes/convex_10_lab.stl" name="torus10" scale=".001 .001 .001"/>
+        <mesh file="meshes/convex_11_lab.stl" name="torus11" scale=".001 .001 .001"/>
+        <mesh file="meshes/convex_12_lab.stl" name="torus12" scale=".001 .001 .001"/>
+        <mesh file="meshes/convex_13_lab.stl" name="torus13" scale=".001 .001 .001"/>
+        <mesh file="meshes/convex_14_lab.stl" name="torus14" scale=".001 .001 .001"/>
+        <mesh file="meshes/convex_15_lab.stl" name="torus15" scale=".001 .001 .001"/>
+        <mesh file="meshes/convex_16_lab.stl" name="torus16" scale=".001 .001 .001"/>
+        <mesh file="meshes/convex_17_lab.stl" name="torus17" scale=".001 .001 .001"/>
         <!-- <mesh file="meshes/convex_12.stl" name="torus12"/> -->
 
         <texture type="skybox" builtin="gradient" width="1000" height="100" rgb1="1 1 1" rgb2="0 0 0" />
@@ -33,7 +33,7 @@
     <worldbody>
 
         <light directional="true" cutoff="100" exponent="1" diffuse="1 1 1" specular=".1 .1 .1" pos="0 0 1.3" dir="-0 0 -1.3" />
-        <geom name='floor' material="MatPlane" pos='-0 0 -5' size='4000 4000 4000' type='plane' conaffinity='1' rgba='0.8 0.9 0.8 1' condim='3' />
+        <geom name='floor' material="MatPlane" pos='-0 0 0' size='5 5 5' type='plane' conaffinity='1' rgba='0.8 0.9 0.8 1' condim='3' />
         
     </worldbody>
 </mujoco>

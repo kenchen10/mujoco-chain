@@ -54,12 +54,12 @@ Examples:
 	 dim = 1462	-> 41344925 voxels
 	 dim = 1689	-> 63687692 voxels
 	 dim = 1692	-> 63984332 voxels
-	 time 28.2624s
+	 time 13.3626s
 + Compute primitive set
 	 # primitives               63984332
 	 # inside surface           61658602
 	 # on surface               2325730
-	 time 2.16651s
+	 time 1.70554s
 + Approximate Convex Decomposition
 	 Subdivision level 1
 	 -> Part[0] C  = 0.559932, E  = 0.0161557, VS = 2325730, VI = 61658602
@@ -259,13 +259,13 @@ Examples:
 	 -> Part[14] C  = 0.000357517, E  = 0.000619081, VS = 89121, VI = 1395044
 	 -> Part[15] C  = 0.000455844, E  = 0.00105856, VS = 152387, VI = 2686288
 + Generate 20 convex-hulls 
-	 time 517.591s
+	 time 455.684s
 + Merge Convex Hulls
 		 Merging (14, 13) 0.000435855
 
 		 Merging (17, 14) 0.000447815
 
-	 time 0.116392s
+	 time 0.109023s
 + Simplify 18 convex-hulls 
 		 Simplify CH[00000] 168 V, 332 T
 		 Simplify CH[00001] 176 V, 348 T
@@ -285,7 +285,7 @@ Examples:
 		 Simplify CH[00015] 231 V, 458 T
 		 Simplify CH[00016] 211 V, 418 T
 		 Simplify CH[00017] 227 V, 450 T
-	 time 0.0167211s
+	 time 0.0185695s
 + Generate output: 18 convex-hulls 
 	 CH[00000] 33 V, 62 T
 	 CH[00001] 37 V, 70 T
