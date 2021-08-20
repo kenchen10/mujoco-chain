@@ -41,11 +41,10 @@ def create_n_links(n, base_file='base.xml'):
         body.add('geom', mesh='torus17', type='mesh')
         # body.add('geom', mesh='torus12', type='mesh')
         if i == 0:
-            body.add('joint', name="chain_x", axis="1 0 0")
-            body.add('joint', name="chain_y", axis="0 1 0")
+            body.add('joint', type="slide", name="chain_x", axis="1 0 0")
+            body.add('joint', type="slide", name="chain_y", axis="0 1 0")
         else:
             body.add('freejoint')
-            # body.add('inertial', pos="-0 0 " + str(ypos), mass=m)
     mjcf_model.actuator.add('velocity', joint="chain_x")
     mjcf_model.actuator.add('velocity', joint="chain_y")
     mjcf.export_with_assets(mjcf_model, 'xml', out_file_name='chain_' + str(n) + '.xml')
@@ -63,5 +62,7 @@ sim = mujoco_py.MjSim(model)
 viewer = mujoco_py.MjViewer(sim)
 
 while True:
+    sim.data.set_joint_qvel("chain_x", 0.1)
+    sim.forward()
     sim.step()
     viewer.render()
