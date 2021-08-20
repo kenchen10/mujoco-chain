@@ -63,7 +63,5 @@ sim = mujoco_py.MjSim(model)
 viewer = mujoco_py.MjViewer(sim)
 
 while True:
-    sim.data.set_joint_qvel("chain_x", 1)
-    sim.forward()
     sim.step()
     viewer.render()
