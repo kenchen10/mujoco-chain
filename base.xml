@@ -3,8 +3,8 @@
     <option timestep="0.001667" integrator="RK4" />
 
     <asset>
-        <mesh file="meshes/torus_vhacd2.stl" name="torus"/>
-        <mesh file="meshes/convex_0_lab.stl" name="torus0" scale=".001 .001 .001"/>
+        <!-- <mesh file="meshes/torus_vhacd2.stl" name="torus"/> -->
+        <!-- <mesh file="meshes/convex_0_lab.stl" name="torus0" scale=".001 .001 .001"/>
         <mesh file="meshes/convex_1_lab.stl" name="torus1" scale=".001 .001 .001"/>
         <mesh file="meshes/convex_2_lab.stl" name="torus2" scale=".001 .001 .001"/>
         <mesh file="meshes/convex_3_lab.stl" name="torus3" scale=".001 .001 .001"/>
@@ -21,7 +21,7 @@
         <mesh file="meshes/convex_14_lab.stl" name="torus14" scale=".001 .001 .001"/>
         <mesh file="meshes/convex_15_lab.stl" name="torus15" scale=".001 .001 .001"/>
         <mesh file="meshes/convex_16_lab.stl" name="torus16" scale=".001 .001 .001"/>
-        <mesh file="meshes/convex_17_lab.stl" name="torus17" scale=".001 .001 .001"/>
+        <mesh file="meshes/convex_17_lab.stl" name="torus17" scale=".001 .001 .001"/> -->
         <!-- <mesh file="meshes/convex_12.stl" name="torus12"/> -->
 
         <texture type="skybox" builtin="gradient" width="1000" height="100" rgb1="1 1 1" rgb2="0 0 0" />
