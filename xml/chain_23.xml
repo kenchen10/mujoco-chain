@@ -31,7 +31,7 @@
   <worldbody>
     <light name="//unnamed_light_0" class="/" directional="true" pos="0 0 1.3" dir="-0 0 -1.3" cutoff="100.0" exponent="1.0" diffuse="1 1 1" specular="0.10000000000000001 0.10000000000000001 0.10000000000000001"/>
     <geom name="floor" class="/" type="plane" conaffinity="1" condim="3" size="5 5 5" material="MatPlane" rgba="0.80000000000000004 0.90000000000000002 0.80000000000000004 1" pos="-0 0 0"/>
-    <body name="body0" pos="-0 0 1.2091999999999998" quat="0.70710700000000004 0 0 0.70710700000000004">
+    <body name="body0" pos="-0 0 1.2096999999999998" quat="0.70710700000000004 0 0 0.70710700000000004">
       <geom name="//unnamed_geom_1" class="/" type="mesh" mesh="torus0"/>
       <geom name="//unnamed_geom_2" class="/" type="mesh" mesh="torus1"/>
       <geom name="//unnamed_geom_3" class="/" type="mesh" mesh="torus2"/>
@@ -50,9 +50,9 @@
       <geom name="//unnamed_geom_16" class="/" type="mesh" mesh="torus15"/>
       <geom name="//unnamed_geom_17" class="/" type="mesh" mesh="torus16"/>
       <geom name="//unnamed_geom_18" class="/" type="mesh" mesh="torus17"/>
-      <inertial pos="-0 0 1.2091999999999998" mass="0.0"/>
+      <inertial pos="-0 0 1.2096999999999998" mass="0.0"/>
     </body>
-    <body name="body1" pos="-0 0 1.1558999999999999" quat="1 0 0 0">
+    <body name="body1" pos="-0 0 1.1568999999999998" quat="1 0 0 0">
       <geom name="//unnamed_geom_19" class="/" type="mesh" mesh="torus0"/>
       <geom name="//unnamed_geom_20" class="/" type="mesh" mesh="torus1"/>
       <geom name="//unnamed_geom_21" class="/" type="mesh" mesh="torus2"/>
@@ -73,7 +73,7 @@
       <geom name="//unnamed_geom_36" class="/" type="mesh" mesh="torus17"/>
       <joint name="//unnamed_joint_0" class="/" type="free"/>
     </body>
-    <body name="body2" pos="-0 0 1.1026" quat="0.70710700000000004 0 0 0.70710700000000004">
+    <body name="body2" pos="-0 0 1.1040999999999999" quat="0.70710700000000004 0 0 0.70710700000000004">
       <geom name="//unnamed_geom_37" class="/" type="mesh" mesh="torus0"/>
       <geom name="//unnamed_geom_38" class="/" type="mesh" mesh="torus1"/>
       <geom name="//unnamed_geom_39" class="/" type="mesh" mesh="torus2"/>
@@ -94,7 +94,7 @@
       <geom name="//unnamed_geom_54" class="/" type="mesh" mesh="torus17"/>
       <joint name="//unnamed_joint_1" class="/" type="free"/>
     </body>
-    <body name="body3" pos="-0 0 1.0493000000000001" quat="1 0 0 0">
+    <body name="body3" pos="-0 0 1.0512999999999999" quat="1 0 0 0">
       <geom name="//unnamed_geom_55" class="/" type="mesh" mesh="torus0"/>
       <geom name="//unnamed_geom_56" class="/" type="mesh" mesh="torus1"/>
       <geom name="//unnamed_geom_57" class="/" type="mesh" mesh="torus2"/>
@@ -115,7 +115,7 @@
       <geom name="//unnamed_geom_72" class="/" type="mesh" mesh="torus17"/>
       <joint name="//unnamed_joint_2" class="/" type="free"/>
     </body>
-    <body name="body4" pos="-0 0 0.99600000000000011" quat="0.70710700000000004 0 0 0.70710700000000004">
+    <body name="body4" pos="-0 0 0.99849999999999994" quat="0.70710700000000004 0 0 0.70710700000000004">
       <geom name="//unnamed_geom_73" class="/" type="mesh" mesh="torus0"/>
       <geom name="//unnamed_geom_74" class="/" type="mesh" mesh="torus1"/>
       <geom name="//unnamed_geom_75" class="/" type="mesh" mesh="torus2"/>
@@ -136,7 +136,7 @@
       <geom name="//unnamed_geom_90" class="/" type="mesh" mesh="torus17"/>
       <joint name="//unnamed_joint_3" class="/" type="free"/>
     </body>
-    <body name="body5" pos="-0 0 0.94270000000000009" quat="1 0 0 0">
+    <body name="body5" pos="-0 0 0.94569999999999999" quat="1 0 0 0">
       <geom name="//unnamed_geom_91" class="/" type="mesh" mesh="torus0"/>
       <geom name="//unnamed_geom_92" class="/" type="mesh" mesh="torus1"/>
       <geom name="//unnamed_geom_93" class="/" type="mesh" mesh="torus2"/>
@@ -157,7 +157,7 @@
       <geom name="//unnamed_geom_108" class="/" type="mesh" mesh="torus17"/>
       <joint name="//unnamed_joint_4" class="/" type="free"/>
     </body>
-    <body name="body6" pos="-0 0 0.88940000000000008" quat="0.70710700000000004 0 0 0.70710700000000004">
+    <body name="body6" pos="-0 0 0.89290000000000003" quat="0.70710700000000004 0 0 0.70710700000000004">
       <geom name="//unnamed_geom_109" class="/" type="mesh" mesh="torus0"/>
       <geom name="//unnamed_geom_110" class="/" type="mesh" mesh="torus1"/>
       <geom name="//unnamed_geom_111" class="/" type="mesh" mesh="torus2"/>
@@ -178,7 +178,7 @@
       <geom name="//unnamed_geom_126" class="/" type="mesh" mesh="torus17"/>
       <joint name="//unnamed_joint_5" class="/" type="free"/>
     </body>
-    <body name="body7" pos="-0 0 0.83610000000000007" quat="1 0 0 0">
+    <body name="body7" pos="-0 0 0.84010000000000007" quat="1 0 0 0">
       <geom name="//unnamed_geom_127" class="/" type="mesh" mesh="torus0"/>
       <geom name="//unnamed_geom_128" class="/" type="mesh" mesh="torus1"/>
       <geom name="//unnamed_geom_129" class="/" type="mesh" mesh="torus2"/>
@@ -199,7 +199,7 @@
       <geom name="//unnamed_geom_144" class="/" type="mesh" mesh="torus17"/>
       <joint name="//unnamed_joint_6" class="/" type="free"/>
     </body>
-    <body name="body8" pos="-0 0 0.78280000000000005" quat="0.70710700000000004 0 0 0.70710700000000004">
+    <body name="body8" pos="-0 0 0.78730000000000011" quat="0.70710700000000004 0 0 0.70710700000000004">
       <geom name="//unnamed_geom_145" class="/" type="mesh" mesh="torus0"/>
       <geom name="//unnamed_geom_146" class="/" type="mesh" mesh="torus1"/>
       <geom name="//unnamed_geom_147" class="/" type="mesh" mesh="torus2"/>
@@ -220,7 +220,7 @@
       <geom name="//unnamed_geom_162" class="/" type="mesh" mesh="torus17"/>
       <joint name="//unnamed_joint_7" class="/" type="free"/>
     </body>
-    <body name="body9" pos="-0 0 0.72950000000000004" quat="1 0 0 0">
+    <body name="body9" pos="-0 0 0.73450000000000015" quat="1 0 0 0">
       <geom name="//unnamed_geom_163" class="/" type="mesh" mesh="torus0"/>
       <geom name="//unnamed_geom_164" class="/" type="mesh" mesh="torus1"/>
       <geom name="//unnamed_geom_165" class="/" type="mesh" mesh="torus2"/>
@@ -241,7 +241,7 @@
       <geom name="//unnamed_geom_180" class="/" type="mesh" mesh="torus17"/>
       <joint name="//unnamed_joint_8" class="/" type="free"/>
     </body>
-    <body name="body10" pos="-0 0 0.67620000000000002" quat="0.70710700000000004 0 0 0.70710700000000004">
+    <body name="body10" pos="-0 0 0.68170000000000019" quat="0.70710700000000004 0 0 0.70710700000000004">
       <geom name="//unnamed_geom_181" class="/" type="mesh" mesh="torus0"/>
       <geom name="//unnamed_geom_182" class="/" type="mesh" mesh="torus1"/>
       <geom name="//unnamed_geom_183" class="/" type="mesh" mesh="torus2"/>
@@ -262,7 +262,7 @@
       <geom name="//unnamed_geom_198" class="/" type="mesh" mesh="torus17"/>
       <joint name="//unnamed_joint_9" class="/" type="free"/>
     </body>
-    <body name="body11" pos="-0 0 0.62290000000000001" quat="1 0 0 0">
+    <body name="body11" pos="-0 0 0.62890000000000024" quat="1 0 0 0">
       <geom name="//unnamed_geom_199" class="/" type="mesh" mesh="torus0"/>
       <geom name="//unnamed_geom_200" class="/" type="mesh" mesh="torus1"/>
       <geom name="//unnamed_geom_201" class="/" type="mesh" mesh="torus2"/>
@@ -283,7 +283,7 @@
       <geom name="//unnamed_geom_216" class="/" type="mesh" mesh="torus17"/>
       <joint name="//unnamed_joint_10" class="/" type="free"/>
     </body>
-    <body name="body12" pos="-0 0 0.5696" quat="0.70710700000000004 0 0 0.70710700000000004">
+    <body name="body12" pos="-0 0 0.57610000000000028" quat="0.70710700000000004 0 0 0.70710700000000004">
       <geom name="//unnamed_geom_217" class="/" type="mesh" mesh="torus0"/>
       <geom name="//unnamed_geom_218" class="/" type="mesh" mesh="torus1"/>
       <geom name="//unnamed_geom_219" class="/" type="mesh" mesh="torus2"/>
@@ -304,7 +304,7 @@
       <geom name="//unnamed_geom_234" class="/" type="mesh" mesh="torus17"/>
       <joint name="//unnamed_joint_11" class="/" type="free"/>
     </body>
-    <body name="body13" pos="-0 0 0.51629999999999998" quat="1 0 0 0">
+    <body name="body13" pos="-0 0 0.52330000000000032" quat="1 0 0 0">
       <geom name="//unnamed_geom_235" class="/" type="mesh" mesh="torus0"/>
       <geom name="//unnamed_geom_236" class="/" type="mesh" mesh="torus1"/>
       <geom name="//unnamed_geom_237" class="/" type="mesh" mesh="torus2"/>
@@ -325,7 +325,7 @@
       <geom name="//unnamed_geom_252" class="/" type="mesh" mesh="torus17"/>
       <joint name="//unnamed_joint_12" class="/" type="free"/>
     </body>
-    <body name="body14" pos="-0 0 0.46299999999999997" quat="0.70710700000000004 0 0 0.70710700000000004">
+    <body name="body14" pos="-0 0 0.47050000000000031" quat="0.70710700000000004 0 0 0.70710700000000004">
       <geom name="//unnamed_geom_253" class="/" type="mesh" mesh="torus0"/>
       <geom name="//unnamed_geom_254" class="/" type="mesh" mesh="torus1"/>
       <geom name="//unnamed_geom_255" class="/" type="mesh" mesh="torus2"/>
@@ -346,7 +346,7 @@
       <geom name="//unnamed_geom_270" class="/" type="mesh" mesh="torus17"/>
       <joint name="//unnamed_joint_13" class="/" type="free"/>
     </body>
-    <body name="body15" pos="-0 0 0.40969999999999995" quat="1 0 0 0">
+    <body name="body15" pos="-0 0 0.41770000000000029" quat="1 0 0 0">
       <geom name="//unnamed_geom_271" class="/" type="mesh" mesh="torus0"/>
       <geom name="//unnamed_geom_272" class="/" type="mesh" mesh="torus1"/>
       <geom name="//unnamed_geom_273" class="/" type="mesh" mesh="torus2"/>
@@ -367,7 +367,7 @@
       <geom name="//unnamed_geom_288" class="/" type="mesh" mesh="torus17"/>
       <joint name="//unnamed_joint_14" class="/" type="free"/>
     </body>
-    <body name="body16" pos="-0 0 0.35639999999999994" quat="0.70710700000000004 0 0 0.70710700000000004">
+    <body name="body16" pos="-0 0 0.36490000000000028" quat="0.70710700000000004 0 0 0.70710700000000004">
       <geom name="//unnamed_geom_289" class="/" type="mesh" mesh="torus0"/>
       <geom name="//unnamed_geom_290" class="/" type="mesh" mesh="torus1"/>
       <geom name="//unnamed_geom_291" class="/" type="mesh" mesh="torus2"/>
@@ -388,7 +388,7 @@
       <geom name="//unnamed_geom_306" class="/" type="mesh" mesh="torus17"/>
       <joint name="//unnamed_joint_15" class="/" type="free"/>
     </body>
-    <body name="body17" pos="-0 0 0.30309999999999993" quat="1 0 0 0">
+    <body name="body17" pos="-0 0 0.31210000000000027" quat="1 0 0 0">
       <geom name="//unnamed_geom_307" class="/" type="mesh" mesh="torus0"/>
       <geom name="//unnamed_geom_308" class="/" type="mesh" mesh="torus1"/>
       <geom name="//unnamed_geom_309" class="/" type="mesh" mesh="torus2"/>
@@ -409,7 +409,7 @@
       <geom name="//unnamed_geom_324" class="/" type="mesh" mesh="torus17"/>
       <joint name="//unnamed_joint_16" class="/" type="free"/>
     </body>
-    <body name="body18" pos="-0 0 0.24979999999999991" quat="0.70710700000000004 0 0 0.70710700000000004">
+    <body name="body18" pos="-0 0 0.25930000000000025" quat="0.70710700000000004 0 0 0.70710700000000004">
       <geom name="//unnamed_geom_325" class="/" type="mesh" mesh="torus0"/>
       <geom name="//unnamed_geom_326" class="/" type="mesh" mesh="torus1"/>
       <geom name="//unnamed_geom_327" class="/" type="mesh" mesh="torus2"/>
@@ -430,7 +430,7 @@
       <geom name="//unnamed_geom_342" class="/" type="mesh" mesh="torus17"/>
       <joint name="//unnamed_joint_17" class="/" type="free"/>
     </body>
-    <body name="body19" pos="-0 0 0.1964999999999999" quat="1 0 0 0">
+    <body name="body19" pos="-0 0 0.20650000000000024" quat="1 0 0 0">
       <geom name="//unnamed_geom_343" class="/" type="mesh" mesh="torus0"/>
       <geom name="//unnamed_geom_344" class="/" type="mesh" mesh="torus1"/>
       <geom name="//unnamed_geom_345" class="/" type="mesh" mesh="torus2"/>
@@ -451,7 +451,7 @@
       <geom name="//unnamed_geom_360" class="/" type="mesh" mesh="torus17"/>
       <joint name="//unnamed_joint_18" class="/" type="free"/>
     </body>
-    <body name="body20" pos="-0 0 0.14319999999999988" quat="0.70710700000000004 0 0 0.70710700000000004">
+    <body name="body20" pos="-0 0 0.15370000000000023" quat="0.70710700000000004 0 0 0.70710700000000004">
       <geom name="//unnamed_geom_361" class="/" type="mesh" mesh="torus0"/>
       <geom name="//unnamed_geom_362" class="/" type="mesh" mesh="torus1"/>
       <geom name="//unnamed_geom_363" class="/" type="mesh" mesh="torus2"/>
@@ -472,7 +472,7 @@
       <geom name="//unnamed_geom_378" class="/" type="mesh" mesh="torus17"/>
       <joint name="//unnamed_joint_19" class="/" type="free"/>
     </body>
-    <body name="body21" pos="-0 0 0.089899999999999883" quat="1 0 0 0">
+    <body name="body21" pos="-0 0 0.10090000000000023" quat="1 0 0 0">
       <geom name="//unnamed_geom_379" class="/" type="mesh" mesh="torus0"/>
       <geom name="//unnamed_geom_380" class="/" type="mesh" mesh="torus1"/>
       <geom name="//unnamed_geom_381" class="/" type="mesh" mesh="torus2"/>
@@ -493,7 +493,7 @@
       <geom name="//unnamed_geom_396" class="/" type="mesh" mesh="torus17"/>
       <joint name="//unnamed_joint_20" class="/" type="free"/>
     </body>
-    <body name="body22" pos="-0 0 0.036599999999999883" quat="0.70710700000000004 0 0 0.70710700000000004">
+    <body name="body22" pos="-0 0 0.048100000000000226" quat="0.70710700000000004 0 0 0.70710700000000004">
       <geom name="//unnamed_geom_397" class="/" type="mesh" mesh="torus0"/>
       <geom name="//unnamed_geom_398" class="/" type="mesh" mesh="torus1"/>
       <geom name="//unnamed_geom_399" class="/" type="mesh" mesh="torus2"/>

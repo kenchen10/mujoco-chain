@@ -16,7 +16,7 @@ def create_n_links(n, base_file='base.xml'):
     ypos = (n * (54.3 - 2 / 2) / 1000 + 4.45 / 1000 + 64.3 / 2000)
     m = 91 / 23
     for i in range(n):
-        ypos -= (54.3 - 2 / 2) / 1000
+        ypos -= (54.3 - 3/2) / 1000
         if i % 2 == 0:
             body = mjcf_model.worldbody.add('body', name="body" + str(i), pos="-0 0 " + str(ypos), quat=even_link_quat)
         else:
