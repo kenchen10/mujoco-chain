@@ -1,6 +1,7 @@
 import mujoco_py
 from dm_control import mjcf, mujoco
 import argparse
+import json
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-n", "--num_links", help="Specifies number of links in chain", default="10")
@@ -37,7 +38,6 @@ def create_n_links(n, base_file='base.xml'):
     assets.add('mesh', file="meshes/convex_16_lab.stl", name="torus16", scale=args.scale + " " + args.scale + " " + args.scale)
     assets.add('mesh', file="meshes/convex_17_lab.stl", name="torus17", scale=args.scale + " " + args.scale + " " + args.scale)
     for i in range(n):
-        print(mjcf_model.asset)
         ypos -= (54.3 - float(args.buffer)) / 1000
         if i % 2 == 0:
             body = mjcf_model.worldbody.add('body', name="body" + str(i), pos="-0 0 " + str(ypos), quat=even_link_quat)
@@ -77,14 +77,17 @@ physics = mujoco.Physics.from_xml_path(xml_path)
 d = []
 for pos in physics.named.data.xpos:
     d.append({'mesh': 'link_lab_vhcad.obj', 'pos': pos})
-print(d)
+file = open("json/data.txt", "w+")
+content = str(d)
+file.write(content)
+# print(d)
 
 model = mujoco_py.load_model_from_path(xml_path)
 sim = mujoco_py.MjSim(model)
 viewer = mujoco_py.MjViewer(sim)
 
 while True:
-    sim.data.set_joint_qvel("chain_x", 0.1)
+    sim.data.set_joint_qvel("chain_x", 0.0001)
     sim.forward()
     sim.step()
     viewer.render()
